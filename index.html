@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text1">ABIRAMI</h2>
+        <h2 id="text2">PORTFOLIO</h2>
+        <a href="#sec" id="btn">Know me</a>
+        <img src="./images/robo.png" alt="working_robo" id="working_robo">
+    </section>
+    <section class="about_sec" id="sec">
+        <img src="./images/AvatarMaker.png" alt="Avatar">
+        <div class="about_me" id="about">
+            <h2>About me</h2><br>
+            <p>I'm born and grew up in Puducherry and living with my small family. I'm now a MSc Computer science student who is passionate about computers and programming.I like to explore more in this area and I will.</p>
+        </div>
+    </section>
+    <section class="edu_sec" id="education">
+        <h2>Education</h2>
+        <div class="edu">
+            <div class="sslc">
+                <h2>SSLC</h2>
+                <p>I completed sslc in 2017 with 93%</p>
+            </div>
+            <div class="hsc">
+                <h2>HSC</h2>
+                <p>I completed hsc in 2019 with 75.2%</p>
+            </div>
+            <div class="ug">
+                <h2>BSc CS</h2>
+                <p>I completed BSc CS in 2022 with 82.2%</p>
+            </div>
+        </div>
+        
+    </section>
+    <script>
+        let text1 = document.getElementById('text1');
+        let text2 = document.getElementById('text2');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            text1.style.left = value*0.25+ 'px';
+            text2.style.left = value*0.25+ 'px';
+
+        })
+    </script>
+</body>
+</html>
